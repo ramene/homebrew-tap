@@ -8,13 +8,13 @@ class RemoteSessions < Formula
 
   if OS.mac?
     url "#{base}/remote-sessions-#{release}-macos-universal.tar.gz"
-    sha256 "8efcf3768ee2addc18eaa63dfd85b9622d6940f25b103a309062a1774cccb7e8"
+    sha256 "87e28ceed53463fce328ab81b970f69f8a381acced6b71a155d1ec5b70fb76a0"
   elsif Hardware::CPU.arm?
     url "#{base}/remote-sessions-#{release}-linux-aarch64.tar.gz"
-    sha256 "9be9adb4758bbe798ff6d8aa1916f6e0c04156fa273df872c915b618047cba39"
+    sha256 "6b341aeed2c2fa33a00bea522e4d9d1baf89f8ea1b66a41f3daee9b1de4a0113"
   else
     url "#{base}/remote-sessions-#{release}-linux-x86_64.tar.gz"
-    sha256 "39f9da71eb7983fc9d917c89314511e700fcebc90c427083c1d9ec5ff7e4edd4"
+    sha256 "c80365d5ebd8e41b925b095d5ad9375480f0d75ea8ae4cf0f7356387b8b3eeeb"
   end
 
   def install
