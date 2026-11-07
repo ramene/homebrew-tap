@@ -3,18 +3,18 @@ class CloudSessions < Formula
   homepage "https://github.com/ramene/cloud-sessions"
   license "MIT"
 
-  release = "0.1.1"
+  release = "0.2.0"
   base = "https://github.com/ramene/cloud-sessions/releases/download/cloud-sessions-v#{release}"
 
   if OS.mac?
     url "#{base}/cloud-sessions-#{release}-macos-universal.tar.gz"
-    sha256 "0000000000000000000000000000000000000000000000000000000000000001"
+    sha256 "d19351954663d089f7443f93131bd09289321eb775e127bb8f458004d6b5898b"
   elsif Hardware::CPU.arm?
     url "#{base}/cloud-sessions-#{release}-linux-aarch64.tar.gz"
-    sha256 "0000000000000000000000000000000000000000000000000000000000000002"
+    sha256 "d09ae2fbc20e02a7f316ddc42be61bf154d15be0183d58d91a1e77045f795231"
   else
     url "#{base}/cloud-sessions-#{release}-linux-x86_64.tar.gz"
-    sha256 "0000000000000000000000000000000000000000000000000000000000000003"
+    sha256 "9d6d1bf6afb6c85118015071e6e46af29973a9e31281363e553aa28dd00e9cad"
   end
 
   def install
