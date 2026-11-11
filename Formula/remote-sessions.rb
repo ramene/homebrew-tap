@@ -3,18 +3,18 @@ class RemoteSessions < Formula
   homepage "https://github.com/ramene/remote-sessions"
   license "MIT"
 
-  release = "0.2.2"
+  release = "0.2.3"
   base = "https://github.com/ramene/remote-sessions/releases/download/remote-sessions-v#{release}"
 
   if OS.mac?
     url "#{base}/remote-sessions-#{release}-macos-universal.tar.gz"
-    sha256 "fcfe46814363b3863521387c1ab0397e0e9c0671b287143a7cfd610998e882da"
+    sha256 "955872c7af70d7a8970871f9ff7bb918f118e8a241f6f91062086913489fa365"
   elsif Hardware::CPU.arm?
     url "#{base}/remote-sessions-#{release}-linux-aarch64.tar.gz"
-    sha256 "b010e50ad207bf75e738114512b48e31edf81fb8c2d9785145ceee9e57094f14"
+    sha256 "d5c770934ed3246071bf0e4dbf974437e8eeb61eca5407c2d7cac50deff200f9"
   else
     url "#{base}/remote-sessions-#{release}-linux-x86_64.tar.gz"
-    sha256 "09abb5aab6e2b53e804c3af1c99022022891f0465a55cca2bea1754fd7d7e857"
+    sha256 "4e4efac9ef9ad1913e118dfed432307e331bc69a0007d4059c422c84830444e9"
   end
 
   def install
